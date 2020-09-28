@@ -2,7 +2,7 @@ package com.cs.cryptoinc
 
 import java.math.BigDecimal
 
-data class Order(val userId:String, val coinType: CoinType, val price: BigDecimal, val quantity: BigDecimal)
+data class Order(val userId:String, val coinType: CoinType, val price: BigDecimal, val quantity: BigDecimal, val orderType: OrderType)
 
 
 enum class CoinType(val coinType: String){
