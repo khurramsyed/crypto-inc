@@ -11,6 +11,11 @@ class LiveOrderBoard(){
         return OrderStatus.REGISTERED
     }
 
+
+    fun cancelOrder(order: Order){
+        orders.remove(order)
+    }
+
     private fun isValidOrder(order: Order):Boolean{
         if(order.userId.isEmpty() || order.userId.isBlank())
             return false;
